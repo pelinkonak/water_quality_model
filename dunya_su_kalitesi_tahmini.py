@@ -66,7 +66,9 @@ fig.update_layout(
 fig.update_traces(textposition="outside", textinfo="percent+label")
 
 fig.show()
+# %%
 fig.write_html("potability_pie_chart.html")
+
 
 # korelasyon analizi (clustermap düzeltildi ve kaydedildi)
 g = sns.clustermap(df.corr(), cmap="coolwarm", dendrogram_ratio=(0.1, 0.2), annot=True, linewidths=0.8, figsize=(10, 10))
